@@ -1,0 +1,197 @@
+{
+  "id": "2b66286b-a3a9-4533-aa88-816674ef1d65",
+  "version": "2.0",
+  "name": "Exercise2.2",
+  "url": "https://tomas33.ru",
+  "tests": [{
+    "id": "e3c09ce0-8db5-4817-9b0f-9198e6c2f94d",
+    "name": "Exercise2.2",
+    "commands": [{
+      "id": "136e0c43-12bb-41f0-bf94-af192c155675",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de88ddca-011f-4a6f-b53f-72d2fe9db080",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bebb590a-6a03-4ce6-bdcc-095484ae2923",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(., 'Регистрация')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d9b4aea-7f78-46b0-9987-39f59b3ff245",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_create",
+      "targets": [
+        ["id=email_create", "id"],
+        ["name=email_create", "name"],
+        ["css=#email_create", "css:finder"],
+        ["xpath=//input[@id='email_create']", "xpath:attributes"],
+        ["xpath=//form[@id='create-account_form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "TESTQA@google.com"
+    }, {
+      "id": "81a07cbc-8213-4cf9-8632-687d8ed34669",
+      "comment": "",
+      "command": "click",
+      "target": "name=SubmitCreate",
+      "targets": [
+        ["css=#SubmitCreate > span", "css:finder"],
+        ["xpath=//button[@id='SubmitCreate']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedbfbd1-351e-41ef-97de-a17e9f6debd8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2536b237-ba94-4218-9725-6df3e1f0cc46",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gender1",
+      "targets": [
+        ["id=id_gender1", "id"],
+        ["name=id_gender", "name"],
+        ["css=#id_gender1", "css:finder"],
+        ["xpath=//input[@id='id_gender1']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-id_gender1']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05df8920-54b6-47de-840a-2b1c3e9375eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer_firstname",
+      "targets": [
+        ["id=customer_firstname", "id"],
+        ["name=customer_firstname", "name"],
+        ["css=#customer_firstname", "css:finder"],
+        ["xpath=//input[@id='customer_firstname']", "xpath:attributes"],
+        ["xpath=//form[@id='account-creation_form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Kirill"
+    }, {
+      "id": "3465887f-46a6-4f93-a9be-2cf5c8cc5fd1",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer_lastname",
+      "targets": [
+        ["id=customer_lastname", "id"],
+        ["name=customer_lastname", "name"],
+        ["css=#customer_lastname", "css:finder"],
+        ["xpath=//input[@id='customer_lastname']", "xpath:attributes"],
+        ["xpath=//form[@id='account-creation_form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Abramunin"
+    }, {
+      "id": "917c7158-b34f-4787-85dd-39ca4fc7a21e",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='account-creation_form']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "1f77224a-d952-43b4-8de4-886a1cca36fd",
+      "comment": "",
+      "command": "select",
+      "target": "id=days",
+      "targets": [],
+      "value": "label=regexp:10\\s+"
+    }, {
+      "id": "42e26d26-8188-47fc-9a0e-83c79999b1cb",
+      "comment": "",
+      "command": "select",
+      "target": "id=months",
+      "targets": [],
+      "value": "label=regexp:Февраль\\s"
+    }, {
+      "id": "8ea7adbf-0ca7-4cbe-8e44-69db3bf1fb73",
+      "comment": "",
+      "command": "select",
+      "target": "id=years",
+      "targets": [],
+      "value": "label=regexp:1986\\s+"
+    }, {
+      "id": "ab027578-9a6d-4778-a0de-00641bd4c63a",
+      "comment": "",
+      "command": "click",
+      "target": "id=newsletter",
+      "targets": [
+        ["id=newsletter", "id"],
+        ["name=newsletter", "name"],
+        ["css=#newsletter", "css:finder"],
+        ["xpath=//input[@id='newsletter']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-newsletter']/span/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1089aab6-f4b4-4401-94f7-1cdf7300096e",
+      "comment": "",
+      "command": "click",
+      "target": "id=optin",
+      "targets": [
+        ["id=optin", "id"],
+        ["name=optin", "name"],
+        ["css=#optin", "css:finder"],
+        ["xpath=//input[@id='optin']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-optin']/span/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1354b1b0-263b-481b-b84e-4779231da4ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitAccount",
+      "targets": [
+        ["css=#submitAccount > span", "css:finder"],
+        ["xpath=//button[@id='submitAccount']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f793f61-21dd-4545-a488-e29a164e62d9",
+      "comment": "Аккаунт успешно зарегистрирован",
+      "command": "assertElementPresent",
+      "target": "xpath=//p[contains(., 'Ваша учетная запись создана')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "71e9f191-274c-4596-b07e-a5256827cada",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3c09ce0-8db5-4817-9b0f-9198e6c2f94d"]
+  }],
+  "urls": ["https://tomas33.ru/"],
+  "plugins": []
+}
